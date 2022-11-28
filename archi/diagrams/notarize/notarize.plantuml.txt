@@ -1,0 +1,52 @@
+/' 
+EDIT ON https://www.planttext.com/
+'/
+
+header Notarize
+
+@startuml
+skinparam backgroundColor white
+skinparam roundcorner 10
+skinparam shadowing false
+
+skinparam sequence {
+ArrowColor #4E4E4E
+ActorBorderColor #4E4E4E
+LifeLineBorderColor #6E6E6E
+LifeLineBackgroundColor #A9DCDF
+
+ParticipantBorderColor #4E4E4E
+ParticipantBackgroundColor #EEEBDC
+ParticipantFontSize 15
+ParticipantFontColor #4E4E4E
+
+ActorBackgroundColor #EEEBDC
+ActorFontColor #4E4E4E
+ActorFontSize 17
+}
+
+
+participant "Pump" 					as 	pump		order	0
+participant	"SelfBar IoT Hub"		as	sb		order	1
+participant	"Notarization API"		as	api		order	2
+participant	"Polygon"	as	poly		order	3
+participant	"Database"	as	db		order	4
+
+pump -> sb: raw data
+activate sb
+sb -> sb: generate n documents
+sb -> sb: generate n documents hashes
+sb -> api: n hashes
+activate api
+api -> api: compute merkle tree from n hashes
+api -> poly: store merkle root + metadata
+activate poly
+poly -> api: OK
+deactivate poly
+api -> db: store n hashes + batch id + merkle root + metadata
+activate db
+db -> api: OK
+deactivate db
+api -> sb: OK
+deactivate api
+@enduml

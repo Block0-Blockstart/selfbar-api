@@ -1,0 +1,57 @@
+version: '3.9'
+
+services:
+  # MongoDB
+  mongo_db:
+    container_name: db_prod
+    build:
+      context: .
+      dockerfile: Dockerfile.prod.mongo
+      args:
+        - MONGO_PORT=$MONGO_PORT
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=$MONGO_INITDB_ROOT_USERNAME
+      - MONGO_INITDB_ROOT_PASSWORD=$MONGO_INITDB_ROOT_PASSWORD
+      - MONGO_INITDB_DATABASE=$MONGO_INITDB_DATABASE
+      - APP_USER=$APP_USER
+      - APP_PWD=$APP_PWD
+      - DB_NAME=$DB_NAME
+    restart: always
+    ports:
+      - $MONGO_PORT:27017
+    volumes:
+      - mongo_db:/data/db
+    networks:
+      - intra  
+
+  # API
+  api:
+    container_name: api_prod
+    build:
+      context: .
+      dockerfile: Dockerfile.prod.api    
+    environment:
+      - API_PORT=$API_PORT
+      - WITH_SWAGGER=$WITH_SWAGGER
+      - BLOCKCHAIN_RPC_URL_PORT=$BLOCKCHAIN_RPC_URL_PORT
+      - BLOCKCHAIN_CHAIN_ID=$BLOCKCHAIN_CHAIN_ID
+      - MONGODB_URI=$MONGODB_URI
+      - ADMIN_PRIVATE_KEY=$ADMIN_PRIVATE_KEY
+      - NOTARIZATION_CONTRACT_ADDRESS=$NOTARIZATION_CONTRACT_ADDRESS
+      - ERC20_CONTRACT_ADDRESS=$ERC20_CONTRACT_ADDRESS
+      - STAKEHOLDER_A_CONTRACT_ADDRESS=$STAKEHOLDER_A_CONTRACT_ADDRESS
+      - STAKEHOLDER_B_CONTRACT_ADDRESS=$STAKEHOLDER_B_CONTRACT_ADDRESS
+
+    ports:
+      - $API_PORT:$API_PORT
+    networks:
+      - intra
+    depends_on:
+      - mongo_db
+
+volumes:
+  mongo_db: {}
+
+networks:
+  intra:
+    driver: bridge

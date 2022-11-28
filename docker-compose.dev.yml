@@ -1,0 +1,26 @@
+version: '3.9'
+
+services:
+  # MongoDB
+  mongo_db:
+    container_name: db_dev
+    build:
+      context: .
+      dockerfile: Dockerfile.dev.mongo
+      args:
+        - MONGO_PORT=$MONGO_PORT
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=$MONGO_INITDB_ROOT_USERNAME
+      - MONGO_INITDB_ROOT_PASSWORD=$MONGO_INITDB_ROOT_PASSWORD
+      - MONGO_INITDB_DATABASE=$MONGO_INITDB_DATABASE
+      - APP_USER=$APP_USER
+      - APP_PWD=$APP_PWD
+      - DB_NAME=$DB_NAME
+    restart: always
+    ports:
+      - $MONGO_PORT:27017
+    volumes:
+      - mongo_db:/data/db
+
+volumes:
+  mongo_db: {}

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="717px" preserveAspectRatio="none"
+  style="width:934px;height:717px;background:#FFFFFF;" version="1.1" viewBox="0 0 934 717" width="934px"
+  zoomAndPan="magnify">
+  <defs />
+  <g>
+    <rect fill="#A9DCDF" height="452.2031" style="stroke:#6E6E6E;stroke-width:1.0;" width="10" x="244" y="170.6953" />
+    <rect fill="#A9DCDF" height="150.3359" style="stroke:#6E6E6E;stroke-width:1.0;" width="10" x="764" y="199.8281" />
+    <rect fill="#A9DCDF" height="236.6016" style="stroke:#6E6E6E;stroke-width:1.0;" width="10" x="855" y="379.2969" />
+    <rect fill="#FEFFED" height="401.0703" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="907.5" x="10"
+      y="214.8281" />
+    <path
+      d="M10,302.2266 L917.5,302.2266 L917.5,610.8984 A5,5 0 0 1 912.5,615.8984 L15,615.8984 A5,5 0 0 1 10,610.8984 L10,302.2266 "
+      fill="#FEFFED" style="stroke:none;stroke-width:1.0;" />
+    <rect fill="#FEFFED" height="214.6016" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="887.5" x="20"
+      y="394.2969" />
+    <path
+      d="M20,481.6953 L907.5,481.6953 L907.5,603.8984 A5,5 0 0 1 902.5,608.8984 L25,608.8984 A5,5 0 0 1 20,603.8984 L20,481.6953 "
+      fill="#FEFFED" style="stroke:none;stroke-width:1.0;" />
+    <line style="stroke:#6E6E6E;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="53" x2="53" y1="97.4297"
+      y2="632.8984" />
+    <line style="stroke:#6E6E6E;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="249" x2="249" y1="97.4297"
+      y2="632.8984" />
+    <line style="stroke:#6E6E6E;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="768.5" x2="768.5" y1="97.4297"
+      y2="632.8984" />
+    <line style="stroke:#6E6E6E;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="859.5" x2="859.5" y1="97.4297"
+      y2="632.8984" /><text fill="#4E4E4E" font-family="sans-serif" font-size="17" lengthAdjust="spacing"
+      textLength="40" x="30" y="93.4204">User</text>
+    <ellipse cx="53" cy="26.1406" fill="#EEEBDC" rx="8" ry="8" style="stroke:#4E4E4E;stroke-width:0.5;" />
+    <path d="M53,34.1406 L53,61.1406 M40,42.1406 L66,42.1406 M53,61.1406 L40,76.1406 M53,61.1406 L66,76.1406 "
+      fill="none" style="stroke:#4E4E4E;stroke-width:0.5;" /><text fill="#4E4E4E" font-family="sans-serif"
+      font-size="17" lengthAdjust="spacing" textLength="40" x="30" y="647.6782">User</text>
+    <ellipse cx="53" cy="660.1875" fill="#EEEBDC" rx="8" ry="8" style="stroke:#4E4E4E;stroke-width:0.5;" />
+    <path d="M53,668.1875 L53,695.1875 M40,676.1875 L66,676.1875 M53,695.1875 L40,710.1875 M53,695.1875 L66,710.1875 "
+      fill="none" style="stroke:#4E4E4E;stroke-width:0.5;" />
+    <rect fill="#EEEBDC" height="31.4609" rx="5" ry="5" style="stroke:#4E4E4E;stroke-width:0.5;" width="142" x="178"
+      y="64.9688" /><text fill="#4E4E4E" font-family="sans-serif" font-size="15" lengthAdjust="spacing" textLength="128"
+      x="185" y="85.8921">Notarization API</text>
+    <rect fill="#EEEBDC" height="31.4609" rx="5" ry="5" style="stroke:#4E4E4E;stroke-width:0.5;" width="142" x="178"
+      y="631.8984" /><text fill="#4E4E4E" font-family="sans-serif" font-size="15" lengthAdjust="spacing"
+      textLength="128" x="185" y="652.8218">Notarization API</text>
+    <rect fill="#EEEBDC" height="31.4609" rx="5" ry="5" style="stroke:#4E4E4E;stroke-width:0.5;" width="87" x="725.5"
+      y="64.9688" /><text fill="#4E4E4E" font-family="sans-serif" font-size="15" lengthAdjust="spacing" textLength="73"
+      x="732.5" y="85.8921">Database</text>
+    <rect fill="#EEEBDC" height="31.4609" rx="5" ry="5" style="stroke:#4E4E4E;stroke-width:0.5;" width="87" x="725.5"
+      y="631.8984" /><text fill="#4E4E4E" font-family="sans-serif" font-size="15" lengthAdjust="spacing" textLength="73"
+      x="732.5" y="652.8218">Database</text>
+    <rect fill="#EEEBDC" height="31.4609" rx="5" ry="5" style="stroke:#4E4E4E;stroke-width:0.5;" width="75" x="822.5"
+      y="64.9688" /><text fill="#4E4E4E" font-family="sans-serif" font-size="15" lengthAdjust="spacing" textLength="61"
+      x="829.5" y="85.8921">Polygon</text>
+    <rect fill="#EEEBDC" height="31.4609" rx="5" ry="5" style="stroke:#4E4E4E;stroke-width:0.5;" width="75" x="822.5"
+      y="631.8984" /><text fill="#4E4E4E" font-family="sans-serif" font-size="15" lengthAdjust="spacing" textLength="61"
+      x="829.5" y="652.8218">Polygon</text>
+    <rect fill="#A9DCDF" height="452.2031" style="stroke:#6E6E6E;stroke-width:1.0;" width="10" x="244" y="170.6953" />
+    <rect fill="#A9DCDF" height="150.3359" style="stroke:#6E6E6E;stroke-width:1.0;" width="10" x="764" y="199.8281" />
+    <rect fill="#A9DCDF" height="236.6016" style="stroke:#6E6E6E;stroke-width:1.0;" width="10" x="855" y="379.2969" />
+    <line style="stroke:#4E4E4E;stroke-width:1.0;" x1="53" x2="95" y1="128.5625" y2="128.5625" />
+    <line style="stroke:#4E4E4E;stroke-width:1.0;" x1="95" x2="95" y1="128.5625" y2="141.5625" />
+    <line style="stroke:#4E4E4E;stroke-width:1.0;" x1="54" x2="95" y1="141.5625" y2="141.5625" />
+    <polygon fill="#4E4E4E" points="64,137.5625,54,141.5625,64,145.5625,60,141.5625"
+      style="stroke:#4E4E4E;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13"
+      lengthAdjust="spacing" textLength="119" x="60" y="123.4966">compute doc hash</text>
+    <polygon fill="#4E4E4E" points="232,166.6953,242,170.6953,232,174.6953,236,170.6953"
+      style="stroke:#4E4E4E;stroke-width:1.0;" />
+    <line style="stroke:#4E4E4E;stroke-width:1.0;" x1="53" x2="238" y1="170.6953" y2="170.6953" /><text fill="#000000"
+      font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="31" x="60" y="165.6294">hash</text>
+    <polygon fill="#4E4E4E" points="752,195.8281,762,199.8281,752,203.8281,756,199.8281"
+      style="stroke:#4E4E4E;stroke-width:1.0;" />
+    <line style="stroke:#4E4E4E;stroke-width:1.0;" x1="254" x2="758" y1="199.8281" y2="199.8281" /><text fill="#000000"
+      font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="59" x="261" y="194.7622">find
+      hash</text>
+    <path d="M15,214.8281 L76,214.8281 L76,221.9609 L66,231.9609 L10,231.9609 L10,219.8281 A5,5 0 0 1 15,214.8281 "
+      fill="#EEEEEE" style="stroke:#000000;stroke-width:1.5;" />
+    <rect fill="none" height="401.0703" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="907.5" x="10"
+      y="214.8281" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold"
+      lengthAdjust="spacing" textLength="21" x="25" y="227.895">alt</text><text fill="#000000" font-family="sans-serif"
+      font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="152" x="91" y="227.0386">["hash does not
+      exist"]</text>
+    <polygon fill="#4E4E4E" points="265,249.0938,255,253.0938,265,257.0938,261,253.0938"
+      style="stroke:#4E4E4E;stroke-width:1.0;" />
+    <line style="stroke:#4E4E4E;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="259" x2="763" y1="253.0938"
+      y2="253.0938" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing"
+      textLength="22" x="271" y="248.0278">null</text>
+    <polygon fill="#4E4E4E" points="64,278.2266,54,282.2266,64,286.2266,60,282.2266"
+      style="stroke:#4E4E4E;stroke-width:1.0;" />
+    <line style="stroke:#4E4E4E;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="58" x2="243" y1="282.2266"
+      y2="282.2266" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing"
+      textLength="97" x="70" y="277.1606">verified = false</text>
+    <line style="stroke:#000000;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="10" x2="917.5" y1="303.2266"
+      y2="303.2266" /><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold"
+      lengthAdjust="spacing" textLength="95" x="15" y="313.437">["hash exists"]</text>
+    <polygon fill="#4E4E4E" points="265,346.1641,255,350.1641,265,354.1641,261,350.1641"
+      style="stroke:#4E4E4E;stroke-width:1.0;" />
+    <line style="stroke:#4E4E4E;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="259" x2="768" y1="350.1641"
+      y2="350.1641" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing"
+      textLength="225" x="271" y="345.0981">hash details (including merkle root)</text>
+    <polygon fill="#4E4E4E" points="843,375.2969,853,379.2969,843,383.2969,847,379.2969"
+      style="stroke:#4E4E4E;stroke-width:1.0;" />
+    <line style="stroke:#4E4E4E;stroke-width:1.0;" x1="254" x2="849" y1="379.2969" y2="379.2969" /><text fill="#000000"
+      font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="181" x="261" y="374.231">check merkle
+      root existence</text>
+    <path d="M25,394.2969 L86,394.2969 L86,401.4297 L76,411.4297 L20,411.4297 L20,399.2969 A5,5 0 0 1 25,394.2969 "
+      fill="#EEEEEE" style="stroke:#000000;stroke-width:1.5;" />
+    <rect fill="none" height="214.6016" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="887.5" x="20"
+      y="394.2969" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold"
+      lengthAdjust="spacing" textLength="21" x="35" y="407.3638">alt</text><text fill="#000000" font-family="sans-serif"
+      font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="201" x="101" y="406.5073">["merkle root does
+      not exist"]</text>
+    <polygon fill="#4E4E4E" points="265,428.5625,255,432.5625,265,436.5625,261,432.5625"
+      style="stroke:#4E4E4E;stroke-width:1.0;" />
+    <line style="stroke:#4E4E4E;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="259" x2="854" y1="432.5625"
+      y2="432.5625" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing"
+      textLength="22" x="271" y="427.4966">null</text>
+    <polygon fill="#4E4E4E" points="64,457.6953,54,461.6953,64,465.6953,60,461.6953"
+      style="stroke:#4E4E4E;stroke-width:1.0;" />
+    <line style="stroke:#4E4E4E;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="58" x2="243" y1="461.6953"
+      y2="461.6953" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing"
+      textLength="97" x="70" y="456.6294">verified = false</text>
+    <line style="stroke:#000000;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="20" x2="907.5" y1="482.6953"
+      y2="482.6953" /><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold"
+      lengthAdjust="spacing" textLength="144" x="25" y="492.9058">["merkle root exists"]</text>
+    <polygon fill="#4E4E4E" points="265,525.6328,255,529.6328,265,533.6328,261,529.6328"
+      style="stroke:#4E4E4E;stroke-width:1.0;" />
+    <line style="stroke:#4E4E4E;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="259" x2="854" y1="529.6328"
+      y2="529.6328" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing"
+      textLength="74" x="271" y="524.5669">merkle root</text>
+    <line style="stroke:#4E4E4E;stroke-width:1.0;" x1="254" x2="296" y1="558.7656" y2="558.7656" />
+    <line style="stroke:#4E4E4E;stroke-width:1.0;" x1="296" x2="296" y1="558.7656" y2="571.7656" />
+    <line style="stroke:#4E4E4E;stroke-width:1.0;" x1="255" x2="296" y1="571.7656" y2="571.7656" />
+    <polygon fill="#4E4E4E" points="265,567.7656,255,571.7656,265,575.7656,261,571.7656"
+      style="stroke:#4E4E4E;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13"
+      lengthAdjust="spacing" textLength="496" x="261" y="553.6997">generate full proof (including merkle root, merkle
+      proof and transaction hash)</text>
+    <polygon fill="#4E4E4E" points="64,596.8984,54,600.8984,64,604.8984,60,600.8984"
+      style="stroke:#4E4E4E;stroke-width:1.0;" />
+    <line style="stroke:#4E4E4E;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="58" x2="243" y1="600.8984"
+      y2="600.8984" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing"
+      textLength="167" x="70" y="595.8325">verified = true + full proof</text>
+    <rect fill="#FFFFFF" height="11.6406" id="_title" rx="5" ry="5" style="stroke:none;stroke-width:1.0;" width="108"
+      x="818.5" y="5" /><text fill="#888888" font-family="sans-serif" font-size="10" lengthAdjust="spacing"
+      textLength="108" x="818.5" y="14.2822">Verify and get proof</text>
+  </g>
+</svg>

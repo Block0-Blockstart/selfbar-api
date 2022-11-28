@@ -1,0 +1,44 @@
+### create
+POST http://localhost:42006/item
+Content-Type: application/json
+
+{
+    "hashes": [
+        "0x3d931d0dc9748b434f6e6b7c6cfcc72bfe085261f0a20b37b8bf98a90fc8a88c",
+        "0xd29c1f4798619f542509f315e3b62b87ab6f3981816ccc82cb78ddc3207a974e",
+        "0xf15fa75d742978326f8a45dc58003aba46da99a7109e24c39e31936ee1fc4347"
+    ]
+}
+
+### verify
+GET http://localhost:42006/item/verify/0x3d931d0dc9748b434f6e6b7c6cfcc72bfe085261f0a20b37b8bf98a90fc8a88c
+
+### hashes-by-batch
+GET http://localhost:42006/item/hashes-by-batch/6346f16773ca4855fbcffc15
+
+### items-between-dates
+GET http://localhost:42006/item/between-dates/1665100000
+
+### items-between-dates with end
+GET http://localhost:42006/item/between-dates/1665100000/1665655431
+
+### last-batches
+GET http://localhost:42006/item/last-batches/7
+
+### number-hashes-by-day
+GET http://localhost:42006/item/number-hashes-by-day/1665163151
+
+### number-hashes-by-day with end
+GET http://localhost:42006/item/number-hashes-by-day/1664618631/1665979840
+
+
+
+### admin get all
+GET http://localhost:42006/item
+sbadm: 0xd76b4f4...
+
+### admin get one
+GET http://localhost:42006/item/633c918960806c7fa2421b07
+
+### admin delete one
+DELETE http://localhost:42006/item/633c918960806c7fa2421b07

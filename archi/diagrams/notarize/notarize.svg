@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="436px" preserveAspectRatio="none"
+  style="width:780px;height:436px;background:#FFFFFF;" version="1.1" viewBox="0 0 780 436" width="780px"
+  zoomAndPan="magnify">
+  <defs />
+  <g>
+    <rect fill="#A9DCDF" height="310.1953" style="stroke:#6E6E6E;stroke-width:1.0;" width="10" x="133.5" y="81.2344" />
+    <rect fill="#A9DCDF" height="187.7969" style="stroke:#6E6E6E;stroke-width:1.0;" width="10" x="353.5" y="194.6328" />
+    <rect fill="#A9DCDF" height="29.1328" style="stroke:#6E6E6E;stroke-width:1.0;" width="10" x="609.5" y="265.8984" />
+    <rect fill="#A9DCDF" height="29.1328" style="stroke:#6E6E6E;stroke-width:1.0;" width="10" x="719.5" y="324.1641" />
+    <line style="stroke:#6E6E6E;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="33" x2="33" y1="50.1016"
+      y2="400.4297" />
+    <line style="stroke:#6E6E6E;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="138" x2="138" y1="50.1016"
+      y2="400.4297" />
+    <line style="stroke:#6E6E6E;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="358.5" x2="358.5" y1="50.1016"
+      y2="400.4297" />
+    <line style="stroke:#6E6E6E;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="614" x2="614" y1="50.1016"
+      y2="400.4297" />
+    <line style="stroke:#6E6E6E;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="724" x2="724" y1="50.1016"
+      y2="400.4297" />
+    <rect fill="#EEEBDC" height="31.4609" rx="5" ry="5" style="stroke:#4E4E4E;stroke-width:0.5;" width="57" x="5"
+      y="17.6406" /><text fill="#4E4E4E" font-family="sans-serif" font-size="15" lengthAdjust="spacing" textLength="43"
+      x="12" y="38.564">Pump</text>
+    <rect fill="#EEEBDC" height="31.4609" rx="5" ry="5" style="stroke:#4E4E4E;stroke-width:0.5;" width="57" x="5"
+      y="399.4297" /><text fill="#4E4E4E" font-family="sans-serif" font-size="15" lengthAdjust="spacing" textLength="43"
+      x="12" y="420.353">Pump</text>
+    <rect fill="#EEEBDC" height="31.4609" rx="5" ry="5" style="stroke:#4E4E4E;stroke-width:0.5;" width="133" x="72"
+      y="17.6406" /><text fill="#4E4E4E" font-family="sans-serif" font-size="15" lengthAdjust="spacing" textLength="119"
+      x="79" y="38.564">SelfBar IoT Hub</text>
+    <rect fill="#EEEBDC" height="31.4609" rx="5" ry="5" style="stroke:#4E4E4E;stroke-width:0.5;" width="133" x="72"
+      y="399.4297" /><text fill="#4E4E4E" font-family="sans-serif" font-size="15" lengthAdjust="spacing"
+      textLength="119" x="79" y="420.353">SelfBar IoT Hub</text>
+    <rect fill="#EEEBDC" height="31.4609" rx="5" ry="5" style="stroke:#4E4E4E;stroke-width:0.5;" width="142" x="287.5"
+      y="17.6406" /><text fill="#4E4E4E" font-family="sans-serif" font-size="15" lengthAdjust="spacing" textLength="128"
+      x="294.5" y="38.564">Notarization API</text>
+    <rect fill="#EEEBDC" height="31.4609" rx="5" ry="5" style="stroke:#4E4E4E;stroke-width:0.5;" width="142" x="287.5"
+      y="399.4297" /><text fill="#4E4E4E" font-family="sans-serif" font-size="15" lengthAdjust="spacing"
+      textLength="128" x="294.5" y="420.353">Notarization API</text>
+    <rect fill="#EEEBDC" height="31.4609" rx="5" ry="5" style="stroke:#4E4E4E;stroke-width:0.5;" width="75" x="577"
+      y="17.6406" /><text fill="#4E4E4E" font-family="sans-serif" font-size="15" lengthAdjust="spacing" textLength="61"
+      x="584" y="38.564">Polygon</text>
+    <rect fill="#EEEBDC" height="31.4609" rx="5" ry="5" style="stroke:#4E4E4E;stroke-width:0.5;" width="75" x="577"
+      y="399.4297" /><text fill="#4E4E4E" font-family="sans-serif" font-size="15" lengthAdjust="spacing" textLength="61"
+      x="584" y="420.353">Polygon</text>
+    <rect fill="#EEEBDC" height="31.4609" rx="5" ry="5" style="stroke:#4E4E4E;stroke-width:0.5;" width="87" x="681"
+      y="17.6406" /><text fill="#4E4E4E" font-family="sans-serif" font-size="15" lengthAdjust="spacing" textLength="73"
+      x="688" y="38.564">Database</text>
+    <rect fill="#EEEBDC" height="31.4609" rx="5" ry="5" style="stroke:#4E4E4E;stroke-width:0.5;" width="87" x="681"
+      y="399.4297" /><text fill="#4E4E4E" font-family="sans-serif" font-size="15" lengthAdjust="spacing" textLength="73"
+      x="688" y="420.353">Database</text>
+    <rect fill="#A9DCDF" height="310.1953" style="stroke:#6E6E6E;stroke-width:1.0;" width="10" x="133.5" y="81.2344" />
+    <rect fill="#A9DCDF" height="187.7969" style="stroke:#6E6E6E;stroke-width:1.0;" width="10" x="353.5" y="194.6328" />
+    <rect fill="#A9DCDF" height="29.1328" style="stroke:#6E6E6E;stroke-width:1.0;" width="10" x="609.5" y="265.8984" />
+    <rect fill="#A9DCDF" height="29.1328" style="stroke:#6E6E6E;stroke-width:1.0;" width="10" x="719.5" y="324.1641" />
+    <polygon fill="#4E4E4E" points="121.5,77.2344,131.5,81.2344,121.5,85.2344,125.5,81.2344"
+      style="stroke:#4E4E4E;stroke-width:1.0;" />
+    <line style="stroke:#4E4E4E;stroke-width:1.0;" x1="33.5" x2="127.5" y1="81.2344" y2="81.2344" /><text fill="#000000"
+      font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="57" x="40.5" y="76.1685">raw
+      data</text>
+    <line style="stroke:#4E4E4E;stroke-width:1.0;" x1="143.5" x2="185.5" y1="110.3672" y2="110.3672" />
+    <line style="stroke:#4E4E4E;stroke-width:1.0;" x1="185.5" x2="185.5" y1="110.3672" y2="123.3672" />
+    <line style="stroke:#4E4E4E;stroke-width:1.0;" x1="144.5" x2="185.5" y1="123.3672" y2="123.3672" />
+    <polygon fill="#4E4E4E" points="154.5,119.3672,144.5,123.3672,154.5,127.3672,150.5,123.3672"
+      style="stroke:#4E4E4E;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13"
+      lengthAdjust="spacing" textLength="146" x="150.5" y="105.3013">generate n documents</text>
+    <line style="stroke:#4E4E4E;stroke-width:1.0;" x1="143.5" x2="185.5" y1="152.5" y2="152.5" />
+    <line style="stroke:#4E4E4E;stroke-width:1.0;" x1="185.5" x2="185.5" y1="152.5" y2="165.5" />
+    <line style="stroke:#4E4E4E;stroke-width:1.0;" x1="144.5" x2="185.5" y1="165.5" y2="165.5" />
+    <polygon fill="#4E4E4E" points="154.5,161.5,144.5,165.5,154.5,169.5,150.5,165.5"
+      style="stroke:#4E4E4E;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13"
+      lengthAdjust="spacing" textLength="196" x="150.5" y="147.4341">generate n documents hashes</text>
+    <polygon fill="#4E4E4E" points="341.5,190.6328,351.5,194.6328,341.5,198.6328,345.5,194.6328"
+      style="stroke:#4E4E4E;stroke-width:1.0;" />
+    <line style="stroke:#4E4E4E;stroke-width:1.0;" x1="143.5" x2="347.5" y1="194.6328" y2="194.6328" /><text
+      fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="58" x="150.5"
+      y="189.5669">n hashes</text>
+    <line style="stroke:#4E4E4E;stroke-width:1.0;" x1="363.5" x2="405.5" y1="223.7656" y2="223.7656" />
+    <line style="stroke:#4E4E4E;stroke-width:1.0;" x1="405.5" x2="405.5" y1="223.7656" y2="236.7656" />
+    <line style="stroke:#4E4E4E;stroke-width:1.0;" x1="364.5" x2="405.5" y1="236.7656" y2="236.7656" />
+    <polygon fill="#4E4E4E" points="374.5,232.7656,364.5,236.7656,374.5,240.7656,370.5,236.7656"
+      style="stroke:#4E4E4E;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13"
+      lengthAdjust="spacing" textLength="232" x="370.5" y="218.6997">compute merkle tree from n hashes</text>
+    <polygon fill="#4E4E4E" points="597.5,261.8984,607.5,265.8984,597.5,269.8984,601.5,265.8984"
+      style="stroke:#4E4E4E;stroke-width:1.0;" />
+    <line style="stroke:#4E4E4E;stroke-width:1.0;" x1="363.5" x2="603.5" y1="265.8984" y2="265.8984" /><text
+      fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="192" x="370.5"
+      y="260.8325">store merkle root + metadata</text>
+    <polygon fill="#4E4E4E" points="374.5,291.0313,364.5,295.0313,374.5,299.0313,370.5,295.0313"
+      style="stroke:#4E4E4E;stroke-width:1.0;" />
+    <line style="stroke:#4E4E4E;stroke-width:1.0;" x1="368.5" x2="613.5" y1="295.0313" y2="295.0313" /><text
+      fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="18" x="380.5"
+      y="289.9653">OK</text>
+    <polygon fill="#4E4E4E" points="707.5,320.1641,717.5,324.1641,707.5,328.1641,711.5,324.1641"
+      style="stroke:#4E4E4E;stroke-width:1.0;" />
+    <line style="stroke:#4E4E4E;stroke-width:1.0;" x1="363.5" x2="713.5" y1="324.1641" y2="324.1641" /><text
+      fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="337" x="370.5"
+      y="319.0981">store n hashes + batch id + merkle root + metadata</text>
+    <polygon fill="#4E4E4E" points="374.5,349.2969,364.5,353.2969,374.5,357.2969,370.5,353.2969"
+      style="stroke:#4E4E4E;stroke-width:1.0;" />
+    <line style="stroke:#4E4E4E;stroke-width:1.0;" x1="368.5" x2="723.5" y1="353.2969" y2="353.2969" /><text
+      fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="18" x="380.5"
+      y="348.231">OK</text>
+    <polygon fill="#4E4E4E" points="154.5,378.4297,144.5,382.4297,154.5,386.4297,150.5,382.4297"
+      style="stroke:#4E4E4E;stroke-width:1.0;" />
+    <line style="stroke:#4E4E4E;stroke-width:1.0;" x1="148.5" x2="357.5" y1="382.4297" y2="382.4297" /><text
+      fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="18" x="160.5"
+      y="377.3638">OK</text>
+    <rect fill="#FFFFFF" height="11.6406" id="_title" rx="5" ry="5" style="stroke:none;stroke-width:1.0;" width="46"
+      x="726" y="5" /><text fill="#888888" font-family="sans-serif" font-size="10" lengthAdjust="spacing"
+      textLength="46" x="726" y="14.2822">Notarize</text>
+  </g>
+</svg>

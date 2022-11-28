@@ -1,0 +1,52 @@
+/' 
+EDIT ON https://www.planttext.com/
+'/
+
+header Verify full proof
+
+@startuml
+skinparam backgroundColor white
+skinparam roundcorner 10
+skinparam shadowing false
+
+skinparam sequence {
+ArrowColor #4E4E4E
+ActorBorderColor #4E4E4E
+LifeLineBorderColor #6E6E6E
+LifeLineBackgroundColor #A9DCDF
+
+ParticipantBorderColor #4E4E4E
+ParticipantBackgroundColor #EEEBDC
+ParticipantFontSize 15
+ParticipantFontColor #4E4E4E
+
+ActorBackgroundColor #EEEBDC
+ActorFontColor #4E4E4E
+ActorFontSize 17
+}
+
+
+actor "User" 					as 	user		order	0
+participant	"Polygon"	as	poly		order	1
+
+user -> user: compute doc hash
+user -> user: use merkle verify on { merkle root + merkle proof }
+alt #FEFFED "merkle verify fails"
+  user --> user: verified = false
+  ||12||
+else "merkle verify succeeds"
+  ||12||
+  user -> poly: check merkle root existence
+  activate poly
+    alt #FEFFED "merkle root does not exist"
+    poly --> user: null
+    user --> user: verified = false
+    ||12||
+    else "merkle root exists"
+    ||12||
+    poly --> user: merkle root
+    user --> user: verified = true
+  end
+  deactivate poly
+end
+@enduml

@@ -1,0 +1,62 @@
+/' 
+EDIT ON https://www.planttext.com/
+'/
+
+header Verify and get proof
+
+@startuml
+skinparam backgroundColor white
+skinparam roundcorner 10
+skinparam shadowing false
+
+skinparam sequence {
+ArrowColor #4E4E4E
+ActorBorderColor #4E4E4E
+LifeLineBorderColor #6E6E6E
+LifeLineBackgroundColor #A9DCDF
+
+ParticipantBorderColor #4E4E4E
+ParticipantBackgroundColor #EEEBDC
+ParticipantFontSize 15
+ParticipantFontColor #4E4E4E
+
+ActorBackgroundColor #EEEBDC
+ActorFontColor #4E4E4E
+ActorFontSize 17
+}
+
+
+actor "User" 					as 	user		order	0
+participant	"Notarization API"		as	api		order	1
+participant	"Database"	as	db		order	3
+participant	"Polygon"	as	poly		order	4
+
+user -> user: compute doc hash
+user -> api: hash
+activate api
+api -> db: find hash
+activate db
+alt #FEFFED "hash does not exist"
+  db --> api: null
+  api --> user: verified = false
+  ||12||
+else "hash exists"
+  ||12||
+  db --> api: hash details (including merkle root) 
+  deactivate db
+  api -> poly: check merkle root existence
+  activate poly
+    alt #FEFFED "merkle root does not exist"
+    poly --> api: null
+    api --> user: verified = false
+    ||12||
+    else "merkle root exists"
+    ||12||
+    poly --> api: merkle root
+    api -> api: generate full proof (including merkle root, merkle proof and transaction hash)
+    api --> user: verified = true + full proof
+  end
+  deactivate poly
+end
+deactivate api
+@enduml

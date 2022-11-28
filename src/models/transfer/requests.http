@@ -1,0 +1,35 @@
+### transfer 1 SBAR (valid)
+POST http://localhost:42006/transfer
+Content-Type: application/json
+
+{
+    "amount": "1000000000000000000"
+}
+
+### transfer 1e-18 SBAR (valid)
+POST http://localhost:42006/transfer
+Content-Type: application/json
+
+{
+    "amount": "1"
+}
+
+### transfer without body (invalid)
+POST http://localhost:42006/transfer
+
+### transfer with bad body (invalid)
+POST http://localhost:42006/transfer
+Content-Type: application/json
+
+{
+    "amount": ""
+}
+
+### transfer random
+POST http://localhost:42006/transfer/random
+
+### movementsBetweenDates
+GET http://localhost:42006/transfer/movements/1610100000/1665979840
+
+### sumBetweenDates
+GET http://localhost:42006/transfer/sum/1605100000/1665979840

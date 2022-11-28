@@ -1,0 +1,33 @@
+ARG API_PORT
+ARG WITH_SWAGGER
+ARG BLOCKCHAIN_RPC_URL_PORT
+ARG BLOCKCHAIN_CHAIN_ID
+ARG MONGODB_URI
+
+# Build stage 1
+FROM node:alpine AS builder
+
+ENV NODE_ENV=development
+
+WORKDIR /usr/src/app
+
+COPY package*.json .
+
+RUN npm ci
+
+COPY . .
+
+RUN npm run build
+
+# Build stage 2
+FROM node:alpine
+
+ENV NODE_ENV=production
+
+WORKDIR /usr/src/app
+
+COPY --from=builder /usr/src/app ./
+
+EXPOSE ${API_PORT}
+
+CMD ["npm", "run", "start:prod"]

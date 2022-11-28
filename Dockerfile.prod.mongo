@@ -1,0 +1,7 @@
+ARG MONGO_PORT
+
+FROM mongo:latest
+
+COPY ./scripts/mongo-init.js ./docker-entrypoint-initdb.d/
+
+EXPOSE ${MONGO_PORT}
