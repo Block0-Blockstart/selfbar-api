@@ -1,4 +1,4 @@
-import { BadRequestException, Inject, Injectable, InternalServerErrorException, Logger } from '@nestjs/common';
+import { BadRequestException, Injectable, InternalServerErrorException, Logger } from '@nestjs/common';
 import { AppConfigService } from '../../config/app/app.config.service';
 import { InjectModel } from '@nestjs/mongoose';
 import mongoose, { Model } from 'mongoose';
@@ -7,10 +7,9 @@ import { CreateItemDto } from './dtos/request/create-item.dto';
 import { Wallet, ethers } from 'ethers';
 import MerkleTree from 'merkletreejs';
 import { keccak256 } from '../../utils/hash';
-import { getPattern } from '../../config/contracts/getPatterns';
 import { TransactionReceipt } from '@ethersproject/abstract-provider';
-import { sendTx } from '../../utils/ethers-helpers';
 import { LogDescription } from 'ethers/lib/utils';
+import { ContractsService } from '../../services/contracts/contracts.service';
 
 export interface IVerifyPayload {
   verified: boolean;
@@ -48,19 +47,19 @@ export interface IextractHashEmittedEventResult {
 
 @Injectable()
 export class ItemsService {
-  private readonly logger = new Logger('DocumentsService');
+  private readonly logger = new Logger('ItemsService');
   private readonly wallet: Wallet;
   private readonly notarizationContract: ethers.Contract;
 
   constructor(
-    @InjectModel('items') private itemsModel: Model<ItemDocument>,
-    @Inject('JSON_RPC_PROVIDER') private jsonRpcProvider: ethers.providers.JsonRpcProvider,
-    private cs: AppConfigService
+    private acs: AppConfigService,
+    private cs: ContractsService,
+    @InjectModel('items') private itemsModel: Model<ItemDocument>
   ) {
-    this.wallet = new Wallet(cs.COMMON_PRIVATE_KEY, this.jsonRpcProvider);
-    this.notarizationContract = new ethers.Contract(
-      this.cs.NOTARIZATION_CONTRACT_ADDRESS,
-      getPattern('notarization').abi,
+    this.wallet = new Wallet(acs.COMMON_PRIVATE_KEY, this.cs.getProvider());
+    this.notarizationContract = this.cs.getContractInstance(
+      'notarization',
+      this.acs.NOTARIZATION_CONTRACT_ADDRESS,
       this.wallet
     );
   }
@@ -301,10 +300,10 @@ export class ItemsService {
    */
   private async notarize({ merkleRoot, reqTimestamp }: INotarizeArgs): Promise<INotarizeResult> {
     // merkleRoot expects a bytes32 and reqTimestamp expects a uint.
-    const { blockNumber: txBlock, transactionHash: txHash } = await sendTx(() =>
+    const { blockNumber: txBlock, transactionHash: txHash } = await this.cs.sendTx(() =>
       this.notarizationContract.emitHash(merkleRoot, reqTimestamp)
     );
-    const block = await this.jsonRpcProvider.getBlock(txBlock);
+    const block = await this.cs.getProvider().getBlock(txBlock);
     return { txBlock, txHash, txTimestamp: block.timestamp };
   }
 
@@ -339,7 +338,7 @@ export class ItemsService {
   private async getTx(txHash: string): Promise<TransactionReceipt> {
     let txReceipt: TransactionReceipt;
     try {
-      txReceipt = await this.jsonRpcProvider.getTransactionReceipt(txHash);
+      txReceipt = await this.cs.getProvider().getTransactionReceipt(txHash);
     } catch (e) {
       this.logger.error(`Failed while retrieving transaction receipt for txHash: ${txHash}.`);
       console.error(e);

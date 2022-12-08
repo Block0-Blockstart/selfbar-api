@@ -1,40 +1,35 @@
-import { Inject, Injectable, Logger } from '@nestjs/common';
+import { Injectable, Logger } from '@nestjs/common';
 import { Wallet, ethers, BigNumber } from 'ethers';
 import { TransactionReceipt } from '@ethersproject/abstract-provider';
 import { AppConfigService } from '../../config/app/app.config.service';
-import { getPattern } from '../../config/contracts/getPatterns';
-import { sendTx } from '../../utils/ethers-helpers';
 import { Model } from 'mongoose';
 import { TransferDocument } from './schemas/transfer.schema';
 import { InjectModel } from '@nestjs/mongoose';
+import { ContractsService } from '../../services/contracts/contracts.service';
 
 @Injectable()
 export class TransferService {
-  private readonly logger = new Logger('DocumentsService');
+  private readonly logger = new Logger('TransferService');
   private readonly commonWallet: Wallet;
   private readonly erc20Contract: ethers.Contract;
   private readonly stakeholderAContract: ethers.Contract;
   private readonly stakeholderBContract: ethers.Contract;
 
   constructor(
-    @InjectModel('transfers') private transferModel: Model<TransferDocument>,
-    @Inject('JSON_RPC_PROVIDER') private jsonRpcProvider: ethers.providers.JsonRpcProvider,
-    private cs: AppConfigService
+    private acs: AppConfigService,
+    private cs: ContractsService,
+    @InjectModel('transfers') private transferModel: Model<TransferDocument>
   ) {
-    this.commonWallet = new Wallet(cs.COMMON_PRIVATE_KEY, this.jsonRpcProvider);
-    this.erc20Contract = new ethers.Contract(
-      this.cs.ERC20_CONTRACT_ADDRESS,
-      getPattern('token').abi,
+    this.commonWallet = new Wallet(acs.COMMON_PRIVATE_KEY, this.cs.getProvider());
+    this.erc20Contract = this.cs.getContractInstance('token', this.acs.ERC20_CONTRACT_ADDRESS, this.commonWallet);
+    this.stakeholderAContract = this.cs.getContractInstance(
+      'stakeholder',
+      this.acs.STAKEHOLDER_A_CONTRACT_ADDRESS,
       this.commonWallet
     );
-    this.stakeholderAContract = new ethers.Contract(
-      this.cs.STAKEHOLDER_A_CONTRACT_ADDRESS,
-      getPattern('stakeholder').abi,
-      this.commonWallet
-    );
-    this.stakeholderBContract = new ethers.Contract(
-      this.cs.STAKEHOLDER_B_CONTRACT_ADDRESS,
-      getPattern('stakeholder').abi,
+    this.stakeholderBContract = this.cs.getContractInstance(
+      'stakeholder',
+      this.acs.STAKEHOLDER_B_CONTRACT_ADDRESS,
       this.commonWallet
     );
   }
@@ -62,7 +57,7 @@ export class TransferService {
       ctTo = this.stakeholderAContract;
     }
 
-    const txReceipt = await sendTx(() => ctFrom.transfer(ctTo.address, amount));
+    const txReceipt = await this.cs.sendTx(() => ctFrom.transfer(ctTo.address, amount));
     await new this.transferModel({
       from: ctFrom.address,
       to: ctTo.address,
