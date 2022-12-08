@@ -1,6 +1,6 @@
 {
   "name": "selfbar-api",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Selfbar - API handling batch notarization",
   "homepage": "https://github.com/Block0-Blockstart/selfbar-api",
   "repository": {
